@@ -1,4 +1,4 @@
-# HelloWorld
+# [HelloWorld](https://exercism.org/tracks/elixir/exercises/hello-world/)
 
 The classical introductory exercise. Just say "Hello, World!".
 
