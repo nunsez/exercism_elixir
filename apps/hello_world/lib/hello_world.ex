@@ -1,18 +1,15 @@
 defmodule HelloWorld do
   @moduledoc """
-  Documentation for `HelloWorld`.
+  The classical introductory exercise. Just say "Hello, World!".
+
+  "Hello, World!" is the traditional first program for beginning programming in a new language or environment.
   """
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> HelloWorld.hello()
-      :world
-
+  Simply returns "Hello, World!"
   """
+  @spec hello :: String.t()
   def hello do
-    :world
+    "Hello, World!"
   end
 end
