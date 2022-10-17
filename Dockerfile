@@ -26,3 +26,4 @@ ENV ERL_AFLAGS="-kernel shell_history enabled"
 # Project setup
 ENV PROJECT_ROOT="/app"
 ENV HISTFILE="${PROJECT_ROOT}/tmp/.bash_history"
+ENV MIX_ARCHIVES="${PROJECT_ROOT}/.mix/archives"
