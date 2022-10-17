@@ -1,0 +1,16 @@
+---
+version: '3.9'
+
+services:
+  sicp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    user: user
+    working_dir: /app
+    restart: 'no'
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/app
+...
