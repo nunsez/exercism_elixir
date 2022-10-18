@@ -3,6 +3,6 @@ defmodule HelloWorldTest do
   doctest HelloWorld
 
   test "says 'Hello, World!'" do
-    assert HelloWorld.hello() == "Hello, World!"
+    assert HelloWorld.hello() === "Hello, World!"
   end
 end

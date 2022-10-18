@@ -3,7 +3,7 @@ defmodule LasagnaTest do
   doctest Lasagna
 
   test "expected minutes in oven" do
-    assert Lasagna.expected_minutes_in_oven() == 40
+    assert Lasagna.expected_minutes_in_oven() === 40
   end
 
   test "remaining minutes in oven" do
