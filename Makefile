@@ -14,8 +14,7 @@ bash:
 iex:
 	- iex -S mix
 
-lint:
-	- mix dialyzer
+lint: credo
 
-dialyzer-build-plt:
-	- mix dialyzer --plt
+credo:
+	mix credo
