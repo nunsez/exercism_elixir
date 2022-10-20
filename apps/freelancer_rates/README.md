@@ -1,5 +1,3 @@
-# [FreelancerRates](https://exercism.org/tracks/elixir/exercises/freelancer-rates)
-
 # Introduction
 
 ## Integers
@@ -109,3 +107,5 @@ FreelancerRates.days_in_budget(20000, 80, 11.0)
 ```
 
 The returned number of days should be rounded down (take the floor) to one decimal place.
+
+[_source_](https://exercism.org/tracks/elixir/exercises/freelancer-rates)
