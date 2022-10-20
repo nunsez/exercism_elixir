@@ -1,4 +1,4 @@
-# Rules
+# [Rules](https://exercism.org/tracks/elixir/exercises/pacman-rules)
 
 In this exercise, you need to translate some rules from the classic game Pac-Man into Elixir functions.
 
