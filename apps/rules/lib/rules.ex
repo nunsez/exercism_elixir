@@ -1,0 +1,35 @@
+defmodule Rules do
+  @moduledoc """
+  In this exercise, you need to translate some rules from
+  the classic game Pac-Man into Elixir functions.
+
+  You have four rules to translate, all related to the game states.
+
+  Tasks:
+
+  1. Define if Pac-Man eats a ghost
+  2. Define if Pac-Man scores
+  3. Define if Pac-Man loses
+  4. Define if Pac-Man wins
+  """
+
+  @spec eat_ghost?(boolean(), boolean()) :: boolean()
+  def eat_ghost?(power_pellet_active, touching_ghost) do
+    power_pellet_active and touching_ghost
+  end
+
+  @spec score?(boolean(), boolean()) :: boolean()
+  def score?(touching_power_pellet, touching_dot) do
+    touching_power_pellet or touching_dot
+  end
+
+  @spec lose?(boolean(), boolean()) :: boolean()
+  def lose?(power_pellet_active, touching_ghost) do
+    touching_ghost and not power_pellet_active
+  end
+
+  @spec win?(boolean(), boolean(), boolean()) :: integer()
+  def win?(has_eaten_all_dots, power_pellet_active, touching_ghost) do
+    has_eaten_all_dots and not lose?(power_pellet_active, touching_ghost)
+  end
+end
