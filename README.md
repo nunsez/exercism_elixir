@@ -1,4 +1,7 @@
-# ExercismElixir
+# Exercism Elixir Track
 
-**TODO: Add description**
+## Exercises
 
+1. [Hellow World](/apps/hello_world/)
+2. [Lasagna](/apps/lasagna/)
+3. [Rules]()
