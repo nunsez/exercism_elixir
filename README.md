@@ -7,4 +7,5 @@
 3. [Pacman Rules](/apps/rules/)
 4. [Freelancer Rates](/apps/freelancer_rates/)
 5. [Secrets](/apps/secrets/)
-5. [Log Level](/apps/log_level/)
+6. [Log Level](/apps/log_level/)
+7. [Language List](/apps/language_list/)
