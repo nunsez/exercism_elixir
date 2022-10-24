@@ -9,3 +9,4 @@
 5. [Secrets](/apps/secrets/)
 6. [Log Level](/apps/log_level/)
 7. [Language List](/apps/language_list/)
+8. [Guessing Game](/apps/guessing_game/)
