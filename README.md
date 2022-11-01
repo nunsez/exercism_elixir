@@ -12,3 +12,4 @@
 8. [Guessing Game](/apps/guessing_game/)
 9. [Kitchen Calculator](/apps/kitchen_calculator/)
 10. [High School Sweetheart](/apps/high_school_sweetheart/)
+11. [Bird Count](/apps/bird_count/)
