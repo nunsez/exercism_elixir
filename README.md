@@ -11,3 +11,4 @@
 7. [Language List](/apps/language_list/)
 8. [Guessing Game](/apps/guessing_game/)
 9. [Kitchen Calculator](/apps/kitchen_calculator/)
+10. [High School Sweetheart](/apps/high_school_sweetheart/)
