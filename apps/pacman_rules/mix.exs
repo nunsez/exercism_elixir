@@ -1,9 +1,9 @@
-defmodule Rules.MixProject do
+defmodule PacmanRules.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :rules,
+      app: :pacman_rules,
       version: "0.1.0",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
