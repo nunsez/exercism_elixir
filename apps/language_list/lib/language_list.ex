@@ -13,21 +13,21 @@ defmodule LanguageList do
   6. Define a function to determine if the list includes a functional language
   """
 
-  @spec new :: list()
+  @spec new :: []
   def new, do: []
 
-  @spec add(list(), any()) :: list()
+  @spec add([any()], any()) :: [...]
   def add(list, language), do: [language | list]
 
-  @spec remove(list()) :: list()
+  @spec remove([any()]) :: [any()]
   defdelegate remove(list), to: Kernel, as: :tl
 
-  @spec first(list()) :: any()
+  @spec first([any()]) :: any()
   defdelegate first(list), to: Kernel, as: :hd
 
-  @spec count(list()) :: integer()
+  @spec count([any()]) :: integer()
   defdelegate count(list), to: Kernel, as: :length
 
-  @spec functional_list?(list()) :: boolean()
+  @spec functional_list?([any()]) :: boolean()
   def functional_list?(list), do: "Elixir" in list
 end

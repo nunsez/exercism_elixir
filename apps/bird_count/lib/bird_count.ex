@@ -21,25 +21,25 @@ defmodule BirdCount do
 
   @busy_threshold 5
 
-  @spec today(list()) :: integer() | nil
+  @spec today([integer()]) :: integer() | nil
   def today([]), do: nil
 
   defdelegate today(list), to: Kernel, as: :hd
 
-  @spec increment_day_count(list()) :: list()
+  @spec increment_day_count([integer()]) :: [integer()]
   def increment_day_count([]), do: [1]
 
   def increment_day_count([head | tail]), do: [head + 1 | tail]
 
-  @spec has_day_without_birds?(list()) :: boolean()
+  @spec has_day_without_birds?([integer()]) :: boolean()
   def has_day_without_birds?(list), do: 0 in list
 
-  @spec total(list()) :: integer()
+  @spec total([integer()]) :: integer()
   def total([]), do: 0
 
   def total([head | tail]), do: head + total(tail)
 
-  @spec busy_days(list()) :: integer()
+  @spec busy_days([integer()]) :: integer()
   def busy_days([]), do: 0
 
   def busy_days([head | tail]) when head >= @busy_threshold, do: 1 + busy_days(tail)

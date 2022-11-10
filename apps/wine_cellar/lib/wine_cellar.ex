@@ -17,7 +17,7 @@ defmodule WineCellar do
 
   @type wine() :: {String.t(), non_neg_integer(), String.t()}
 
-  @spec explain_colors :: list(keyword())
+  @spec explain_colors :: keyword()
   def explain_colors do
     [
       white: "Fermented without skin contact.",
@@ -26,7 +26,7 @@ defmodule WineCellar do
     ]
   end
 
-  @spec filter(list(keyword()), String.t(), list(keyword())) :: list(wine())
+  @spec filter(keyword(), String.t(), keyword()) :: [wine()]
   def filter(cellar, color, opts \\ []) do
     cellar
     |> Keyword.get_values(color)
@@ -36,7 +36,7 @@ defmodule WineCellar do
 
   # The functions below do not need to be modified.
 
-  @spec filter_by_year(list(wine()), non_neg_integer() | nil) :: list(wine())
+  @spec filter_by_year([wine()], non_neg_integer() | nil) :: [wine()]
   defp filter_by_year(wines, year)
   defp filter_by_year([], _year), do: []
   defp filter_by_year(wines, nil), do: wines
@@ -49,7 +49,7 @@ defmodule WineCellar do
     filter_by_year(tail, year)
   end
 
-  @spec filter_by_country(list(wine()), String.t() | nil) :: list(wine())
+  @spec filter_by_country([wine()], String.t() | nil) :: [wine()]
   defp filter_by_country(wines, country)
   defp filter_by_country([], _country), do: []
   defp filter_by_country(wines, nil), do: wines

@@ -32,6 +32,6 @@ defmodule HighScore do
     Map.update(scores, name, score, fn(existing_value) -> score + existing_value end)
   end
 
-  @spec get_players(map()) :: list()
+  @spec get_players(map()) :: [map()]
   defdelegate get_players(scores), to: Map, as: :keys
 end
