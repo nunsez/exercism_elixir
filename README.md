@@ -21,3 +21,4 @@
 17. [Take A Number](/apps/take_a_number/)
 18. [Wine Cellar](/apps/wine_cellar/)
 19. [DNA Encoding](/apps/dna_encoding/)
+20. [Library Fees](/apps/library_fees/)
