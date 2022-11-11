@@ -24,3 +24,4 @@
 20. [Library Fees](/apps/library_fees/)
 21. [Basketball Website](/apps/basketball_website/)
 22. [Boutique Inventory](/apps/boutique_inventory/)
+23. [File Sniffer](/apps/file_sniffer/)
