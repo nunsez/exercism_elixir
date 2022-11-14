@@ -2,7 +2,7 @@
 version: '3.9'
 
 services:
-  sicp:
+  exercism:
     build:
       context: .
       dockerfile: Dockerfile

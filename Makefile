@@ -9,7 +9,7 @@ build:
 	- docker-compose build
 
 bash:
-	- docker-compose run --rm sicp /bin/bash
+	- docker-compose run --rm exercism /bin/bash
 
 iex:
 	- iex -S mix
