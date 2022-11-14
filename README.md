@@ -25,3 +25,4 @@
 21. [Basketball Website](/apps/basketball_website/)
 22. [Boutique Inventory](/apps/boutique_inventory/)
 23. [File Sniffer](/apps/file_sniffer/)
+24. [Newsletter](/apps/newsletter/)
