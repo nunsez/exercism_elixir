@@ -37,7 +37,7 @@ defmodule KitchenCalculator do
   @spec get_volume(volume_pair()) :: number()
   def get_volume({_, value}), do: value
 
-  @spec to_milliliter(volume_pair()) :: number()
+  @spec to_milliliter(volume_pair()) :: volume_pair()
   def to_milliliter({:cup, value}), do: {:milliliter, value * @cup}
 
   def to_milliliter({:fluid_ounce, value}), do: {:milliliter, value * @fluid_ounce}
