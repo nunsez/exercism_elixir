@@ -13,7 +13,9 @@ defmodule LogLevel do
   2. Send an alert
   """
 
-  @spec to_label(integer(), boolean()) :: atom()
+  @type log_label() :: :trace | :debug | :info | :warning | :error | :fatal | :unknown
+
+  @spec to_label(integer(), boolean()) :: log_label()
   def to_label(level, legacy?) do
     cond do
       level == 0 and not legacy? -> :trace
@@ -26,7 +28,7 @@ defmodule LogLevel do
     end
   end
 
-  @spec to_label(integer(), boolean()) :: atom()
+  @spec alert_recipient(integer(), boolean()) :: atom() | false
   def alert_recipient(level, legacy?) do
     label = to_label(level, legacy?)
 
