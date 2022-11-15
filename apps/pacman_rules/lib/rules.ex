@@ -28,7 +28,7 @@ defmodule Rules do
     touching_ghost and not power_pellet_active
   end
 
-  @spec win?(boolean(), boolean(), boolean()) :: integer()
+  @spec win?(boolean(), boolean(), boolean()) :: boolean()
   def win?(has_eaten_all_dots, power_pellet_active, touching_ghost) do
     has_eaten_all_dots and not lose?(power_pellet_active, touching_ghost)
   end
