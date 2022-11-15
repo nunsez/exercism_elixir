@@ -51,7 +51,7 @@ defmodule LibraryFees do
     |> Kernel.==(1)
   end
 
-  @spec calculate_late_fee(NaiveDateTime.t(), NaiveDateTime.t(), non_neg_integer()) :: non_neg_integer()
+  @spec calculate_late_fee(String.t(), String.t(), non_neg_integer()) :: non_neg_integer()
   def calculate_late_fee(checkout, return, rate) do
     return_datetime = datetime_from_string(return)
     checkout_datetime = datetime_from_string(checkout)
