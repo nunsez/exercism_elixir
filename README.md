@@ -26,3 +26,4 @@
 22. [Boutique Inventory](/apps/boutique_inventory/)
 23. [File Sniffer](/apps/file_sniffer/)
 24. [Newsletter](/apps/newsletter/)
+25. [Chessboard](/apps/chessboard/)
