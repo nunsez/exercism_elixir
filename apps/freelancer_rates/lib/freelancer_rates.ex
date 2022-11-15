@@ -28,10 +28,10 @@ defmodule FreelancerRates do
   @daily_rate 8.0
   @monthly_billable_days 22
 
-  @spec daily_rate(integer()) :: float()
+  @spec daily_rate(number()) :: float()
   def daily_rate(hourly_rate), do: hourly_rate * @daily_rate
 
-  @spec apply_discount(integer(), integer()) :: float()
+  @spec apply_discount(number(), float()) :: float()
   def apply_discount(before_discount, discount) do
     before_discount * (100 - discount) / 100
   end
@@ -42,7 +42,7 @@ defmodule FreelancerRates do
     |> ceil
   end
 
-  @spec days_in_budget(integer(), integer(), float()) :: float()
+  @spec days_in_budget(integer(), integer(), number()) :: float()
   def days_in_budget(budget, hourly_rate, discount) do
     budget / daily_discounted_rate(hourly_rate, discount)
     |> Float.floor(1)
@@ -51,7 +51,7 @@ defmodule FreelancerRates do
   @spec daily_discounted_rate(integer(), float()) :: float()
   defp daily_discounted_rate(hourly_rate, discount) do
     hourly_rate
-    |> daily_rate
+    |> daily_rate()
     |> apply_discount(discount)
   end
 end
