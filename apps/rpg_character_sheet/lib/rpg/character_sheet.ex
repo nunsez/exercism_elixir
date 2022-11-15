@@ -50,5 +50,6 @@ defmodule RPG.CharacterSheet do
     |> Map.put(:class, ask_class())
     |> Map.put(:level, ask_level())
     |> IO.inspect(label: "Your character")
+    # credo:disable-for-previous-line Credo.Check.Warning.IoInspect
   end
 end
