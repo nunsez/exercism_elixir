@@ -26,7 +26,7 @@ defmodule WineCellar do
     ]
   end
 
-  @spec filter(keyword(), String.t(), keyword()) :: [wine()]
+  @spec filter(keyword(), atom(), maybe_improper_list()) :: [wine()]
   def filter(cellar, color, opts \\ []) do
     cellar
     |> Keyword.get_values(color)
