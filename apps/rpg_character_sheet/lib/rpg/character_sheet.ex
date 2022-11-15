@@ -41,7 +41,7 @@ defmodule RPG.CharacterSheet do
     |> String.to_integer()
   end
 
-  @spec ask_level :: character()
+  @spec run :: character()
   def run do
     welcome()
 
