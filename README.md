@@ -28,3 +28,4 @@
 24. [Newsletter](/apps/newsletter/)
 25. [Chessboard](/apps/chessboard/)
 26. [Remote Control Car](/apps/remote_control_car/)
+27. [Boutique Suggestions](/apps/boutique_suggestions/)
