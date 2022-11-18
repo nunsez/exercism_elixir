@@ -31,3 +31,4 @@
 27. [Boutique Suggestions](/apps/boutique_suggestions/)
 28. [Community Garden](/apps/community_garden/)
 29. [Bread And Potions](/apps/bread_and_potions/)
+30. [Captain's Log](/apps/captains_log/)
