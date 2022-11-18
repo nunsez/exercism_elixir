@@ -30,3 +30,4 @@
 26. [Remote Control Car](/apps/remote_control_car/)
 27. [Boutique Suggestions](/apps/boutique_suggestions/)
 28. [Community Garden](/apps/community_garden/)
+29. [Bread And Potions](/apps/bread_and_potions/)
