@@ -1,4 +1,4 @@
-defmodule RPG.CharacterSheet do
+defmodule RPGCharacterSheet do
   @moduledoc """
   You and your friends love to play pen-and-paper role-playing games,
   but you noticed that it's difficult to get new people to join your group.

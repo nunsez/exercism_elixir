@@ -1,14 +1,14 @@
-defmodule RPG.CharacterSheetTest do
+defmodule RPGCharacterSheetTest do
   use ExUnit.Case
   import ExUnit.CaptureIO
-  doctest RPG.CharacterSheet
+  doctest RPGCharacterSheet
 
   describe "welcome/0" do
     @tag task_id: 1
     test "it prints a welcome message" do
       io =
         capture_io(fn ->
-          assert RPG.CharacterSheet.welcome() == :ok
+          assert RPGCharacterSheet.welcome() == :ok
         end)
 
       assert io == "Welcome! Let's fill out your character sheet together.\n"
@@ -20,7 +20,7 @@ defmodule RPG.CharacterSheetTest do
     test "it prints a prompt" do
       io =
         capture_io("\n", fn ->
-          RPG.CharacterSheet.ask_name()
+          RPGCharacterSheet.ask_name()
         end)
 
       assert io == "What is your character's name?\n"
@@ -29,7 +29,7 @@ defmodule RPG.CharacterSheetTest do
     @tag task_id: 2
     test "returns the trimmed input" do
       capture_io("Maxwell The Great\n", fn ->
-        assert RPG.CharacterSheet.ask_name() == "Maxwell The Great"
+        assert RPGCharacterSheet.ask_name() == "Maxwell The Great"
       end)
     end
   end
@@ -39,7 +39,7 @@ defmodule RPG.CharacterSheetTest do
     test "it prints a prompt" do
       io =
         capture_io("\n", fn ->
-          RPG.CharacterSheet.ask_class()
+          RPGCharacterSheet.ask_class()
         end)
 
       assert io == "What is your character's class?\n"
@@ -48,7 +48,7 @@ defmodule RPG.CharacterSheetTest do
     @tag task_id: 3
     test "returns the trimmed input" do
       capture_io("rogue\n", fn ->
-        assert RPG.CharacterSheet.ask_class() == "rogue"
+        assert RPGCharacterSheet.ask_class() == "rogue"
       end)
     end
   end
@@ -58,7 +58,7 @@ defmodule RPG.CharacterSheetTest do
     test "it prints a prompt" do
       io =
         capture_io("1\n", fn ->
-          RPG.CharacterSheet.ask_level()
+          RPGCharacterSheet.ask_level()
         end)
 
       assert io == "What is your character's level?\n"
@@ -67,7 +67,7 @@ defmodule RPG.CharacterSheetTest do
     @tag task_id: 4
     test "returns the trimmed input as an integer" do
       capture_io("3\n", fn ->
-        assert RPG.CharacterSheet.ask_level() == 3
+        assert RPGCharacterSheet.ask_level() == 3
       end)
     end
   end
@@ -77,7 +77,7 @@ defmodule RPG.CharacterSheetTest do
     test "it asks for name, class, and level" do
       io =
         capture_io("Susan The Fearless\nfighter\n6\n", fn ->
-          RPG.CharacterSheet.run()
+          RPGCharacterSheet.run()
         end)
 
       assert io =~ """
@@ -91,7 +91,7 @@ defmodule RPG.CharacterSheetTest do
     @tag task_id: 5
     test "it returns a character map" do
       capture_io("The Stranger\nrogue\n2\n", fn ->
-        assert RPG.CharacterSheet.run() == %{name: "The Stranger", class: "rogue", level: 2}
+        assert RPGCharacterSheet.run() == %{name: "The Stranger", class: "rogue", level: 2}
       end)
     end
 
@@ -99,7 +99,7 @@ defmodule RPG.CharacterSheetTest do
     test "it inspects the character map" do
       io =
         capture_io("Anne\nhealer\n4\n", fn ->
-          RPG.CharacterSheet.run()
+          RPGCharacterSheet.run()
         end)
 
       assert io =~ "\nYour character: " <> inspect(%{name: "Anne", class: "healer", level: 4})
