@@ -1,4 +1,4 @@
-defmodule Username do
+defmodule GermanSysadmin do
   @moduledoc """
   You are working as a system administrator for a big company in Munich, Germany.
 
@@ -18,22 +18,4 @@ defmodule Username do
   2. Allow underscores
   3. Substitute German characters
   """
-
-  @spec sanitize(charlist()) :: charlist()
-  def sanitize(''), do: ''
-
-  def sanitize([head | tail]) do
-    sanitized =
-      case head do
-        head when head in ?a..?z -> [head]
-        ?_ -> '_'
-        ?ä -> 'ae'
-        ?ö -> 'oe'
-        ?ü -> 'ue'
-        ?ß -> 'ss'
-        _ -> ''
-      end
-
-    sanitized ++ sanitize(tail)
-  end
 end

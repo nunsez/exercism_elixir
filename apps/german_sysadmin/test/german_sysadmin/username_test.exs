@@ -1,6 +1,8 @@
-defmodule UsernameTest do
+defmodule GermanSysadmin.UsernameTest do
   use ExUnit.Case
-  doctest Username
+  doctest GermanSysadmin.Username
+
+  alias GermanSysadmin.Username
 
   describe "sanitize/1" do
     @tag task_id: 1
