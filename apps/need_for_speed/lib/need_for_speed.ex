@@ -24,6 +24,7 @@ defmodule NeedForSpeed do
 
   # Do not edit the code below.
 
+  @spec print_race(Race.t()) :: :ok
   def print_race(%Race{} = race) do
     puts("""
     🏁 #{race.title} 🏁
@@ -38,6 +39,7 @@ defmodule NeedForSpeed do
     |> Enum.each(fn {car, index} -> print_car(car, index + 1) end)
   end
 
+  @spec print_car(Car.t(), pos_integer()) :: :ok
   defp print_car(%Car{} = car, index) do
     color = color(car)
 
@@ -48,6 +50,7 @@ defmodule NeedForSpeed do
     """)
   end
 
+  @spec color(Car.t()) :: String.t()
   defp color(%Car{} = car) do
     case car.color do
       :red -> red()
