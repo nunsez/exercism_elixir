@@ -13,6 +13,8 @@ defmodule CommunityGarden do
   5. Get a registered plot
   """
 
+  alias CommunityGarden.Plot
+
   @type plot_not_found :: {:not_found, String.t()}
 
   @initial_state {[], 1}

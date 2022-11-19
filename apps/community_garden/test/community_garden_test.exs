@@ -2,6 +2,8 @@ defmodule CommunityGardenTest do
   use ExUnit.Case
   doctest CommunityGarden
 
+  alias CommunityGarden.Plot
+
   @tag task_id: 1
   test "start returns an alive pid" do
     assert {:ok, pid} = CommunityGarden.start()

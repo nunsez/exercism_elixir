@@ -1,4 +1,4 @@
-defmodule Plot do
+defmodule CommunityGarden.Plot do
   @moduledoc """
   Use the Plot struct as it is provided
   """
