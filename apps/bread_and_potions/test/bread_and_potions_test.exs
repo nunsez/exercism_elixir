@@ -1,15 +1,17 @@
-defmodule RPGTest do
+defmodule BreadAndPotionsTest do
   use ExUnit.Case
-  doctest RPG
+  doctest BreadAndPotions
 
-  alias RPG.Character
-  alias RPG.Edible
-  alias RPG.EmptyBottle
-  alias RPG.LoafOfBread
-  alias RPG.ManaPotion
-  alias RPG.Poison
+  alias BreadAndPotions.Character
+  alias BreadAndPotions.Edible
+  alias BreadAndPotions.EmptyBottle
+  alias BreadAndPotions.LoafOfBread
+  alias BreadAndPotions.ManaPotion
+  alias BreadAndPotions.Poison
 
   defmodule NewItem do
+    @moduledoc false
+
     defstruct []
   end
 

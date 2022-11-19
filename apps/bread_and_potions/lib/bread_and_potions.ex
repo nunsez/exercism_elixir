@@ -1,4 +1,4 @@
-defmodule RPG do
+defmodule BreadAndPotions do
   @moduledoc """
   You're developing your own role-playing video game. In your game, there are
   _characters_ and _items_. One of the many actions that you can do with an item is
