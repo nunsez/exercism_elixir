@@ -1,7 +1,8 @@
 defmodule RPGCharacterSheetTest do
   use ExUnit.Case
-  import ExUnit.CaptureIO
   doctest RPGCharacterSheet
+
+  import ExUnit.CaptureIO
 
   describe "welcome/0" do
     @tag task_id: 1
