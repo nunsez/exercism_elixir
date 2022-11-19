@@ -1,6 +1,8 @@
-defmodule DNATest do
+defmodule DNAEncodingTest do
   use ExUnit.Case
-  doctest DNA
+  doctest DNAEncoding
+
+  alias DNAEncoding, as: DNA
 
   describe "encode to 4-bit encoding" do
     @tag task_id: 1

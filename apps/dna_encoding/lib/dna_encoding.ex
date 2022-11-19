@@ -1,4 +1,4 @@
-defmodule DNA do
+defmodule DNAEncoding do
   @moduledoc """
   In your DNA research lab, you have been working through various ways to
   compress your research data to save storage space.
