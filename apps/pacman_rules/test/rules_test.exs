@@ -1,6 +1,8 @@
-defmodule RulesTest do
+defmodule PacmanRulesTest do
   use ExUnit.Case
-  doctest Rules
+  doctest PacmanRules
+
+  alias PacmanRules, as: Rules
 
   describe "eat_ghost?/2" do
     @tag task_id: 1

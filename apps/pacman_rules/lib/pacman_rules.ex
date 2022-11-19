@@ -1,4 +1,4 @@
-defmodule Rules do
+defmodule PacmanRules do
   @moduledoc """
   In this exercise, you need to translate some rules from
   the classic game Pac-Man into Elixir functions.
