@@ -1,6 +1,8 @@
-defmodule FormTest do
+defmodule CityOffice.FormTest do
   use ExUnit.Case
-  doctest Form
+  doctest CityOffice.Form
+
+  alias CityOffice.Form
 
   defmacrop assert_moduledoc(expected_moduledoc) do
     quote do

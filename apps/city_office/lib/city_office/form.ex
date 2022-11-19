@@ -1,4 +1,4 @@
-defmodule Form do
+defmodule CityOffice.Form do
   @moduledoc """
   A collection of loosely related functions helpful for filling out various forms at the city office.
   """
