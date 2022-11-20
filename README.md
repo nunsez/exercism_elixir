@@ -35,3 +35,4 @@
 31. [Need For Speed](/apps/need_for_speed/)
 32. [RPN Calculator](/apps/rpn_calculator/)
 33. [Stack Underflow](/apps/stack_underflow/)
+34. [RPN Calculator Inspection](/apps/rpn_calculator_inspection/)
