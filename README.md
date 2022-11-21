@@ -36,3 +36,4 @@
 32. [RPN Calculator](/apps/rpn_calculator/)
 33. [Stack Underflow](/apps/stack_underflow/)
 34. [RPN Calculator Inspection](/apps/rpn_calculator_inspection/)
+35. [Lucas Numbers](/apps/lucas_numbers/)
