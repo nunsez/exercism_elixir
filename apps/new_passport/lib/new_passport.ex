@@ -19,6 +19,8 @@ defmodule NewPassport do
   4. Receive your new passport
   """
 
+  @type manual() :: (Date.t() -> integer())
+
   @coffee_break_minutes 15
 
   @spec get_new_passport(NaiveDateTime.t(), Date.t(), atom()) ::
@@ -37,6 +39,7 @@ defmodule NewPassport do
 
   # Do not modify the functions below
 
+  @spec enter_building(NaiveDateTime.t()) :: {:ok, integer()} | {:error, String.t()}
   defp enter_building(%NaiveDateTime{} = datetime) do
     day = Date.day_of_week(datetime)
     time = NaiveDateTime.to_time(datetime)
@@ -54,6 +57,9 @@ defmodule NewPassport do
   end
 
   @eighteen_years 18 * 365
+
+  @spec find_counter_information(NaiveDateTime.t()) ::
+    {:ok, manual()} | {:coffee_break, String.t()}
   defp find_counter_information(%NaiveDateTime{} = datetime) do
     time = NaiveDateTime.to_time(datetime)
 
@@ -64,6 +70,7 @@ defmodule NewPassport do
     end
   end
 
+  @spec stamp_form(integer(), integer(), atom()) :: {:ok, integer()} | {:error, String.t()}
   defp stamp_form(timestamp, counter, :blue) when rem(counter, 2) == 1 do
     {:ok, 3 * (timestamp + counter) + 1}
   end
@@ -74,10 +81,12 @@ defmodule NewPassport do
 
   defp stamp_form(_timestamp, _counter, _form), do: {:error, "wrong form color"}
 
+  @spec get_new_passport_number(integer(), integer(), integer()) :: String.t()
   defp get_new_passport_number(timestamp, counter, checksum) do
     "#{timestamp}-#{counter}-#{checksum}"
   end
 
+  @spec time_between(Time.t(), Time.t(), Time.t()) :: boolean()
   defp time_between(time, from, to) do
     Time.compare(from, time) != :gt and Time.compare(to, time) == :gt
   end
