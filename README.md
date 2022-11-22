@@ -38,3 +38,4 @@
 34. [RPN Calculator Inspection](/apps/rpn_calculator_inspection/)
 35. [Lucas Numbers](/apps/lucas_numbers/)
 36. [New Passport](/apps/new_passport/)
+37. [Top Secret](/apps/top_secret/)
