@@ -8,7 +8,6 @@ defmodule StackUnderflow.Exception.StackUnderflowError do
   @type t() :: %__MODULE__{}
 
   @impl Exception
-  @spec exception([] | String.t()) :: t()
   def exception([]), do: %__MODULE__{}
 
   def exception(value) do
