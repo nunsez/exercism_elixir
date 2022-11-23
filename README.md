@@ -41,3 +41,4 @@
 37. [Top Secret](/apps/top_secret/)
 38. [Dancing Dots](/apps/dancing_dots/)
 39. [Take-A-Number Deluxe](/apps/take_a_number_deluxe/)
+40. [Log Parser](/apps/log_parser/)
