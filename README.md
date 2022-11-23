@@ -39,4 +39,5 @@
 35. [Lucas Numbers](/apps/lucas_numbers/)
 36. [New Passport](/apps/new_passport/)
 37. [Top Secret](/apps/top_secret/)
-38. [Dancing Dots](/apps//dancing_dots/)
+38. [Dancing Dots](/apps/dancing_dots/)
+39. [Take-A-Number Deluxe](/apps/take_a_number_deluxe/)
