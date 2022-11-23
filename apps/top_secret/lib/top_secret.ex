@@ -10,9 +10,9 @@ defmodule TopSecret do
   To decode her secret messages:
 
   - Take all functions (public and private) in the order they're defined
-  in.
+    in.
   - For each function, take the first `n` characters from its name, where `n`
-  is the function's arity.
+    is the function's arity.
 
   Tasks:
 
